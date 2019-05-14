@@ -1,0 +1,21 @@
+@import 'assets/css/styles';
+
+.percentage-bar {
+	width: 40%;
+}
+
+.percentage-bar__labels,
+.percentage-bar__values {
+	display: flex;
+}
+
+.percentage-bar__values {
+	background: #ddd;
+	height: 50px;
+	justify-content: space-between;
+}
+
+.percentage-bar__value {
+	@include transition();
+	width: 0;
+}
